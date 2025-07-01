@@ -1,6 +1,8 @@
 # torch-ddp
 
-This project is a step-by-step implementation of PyTorch's DistributedDataParallel (DDP), built from scratch. It serves as a learning exercise to understand the core concepts of distributed training in PyTorch.
+This project is a step-by-step implementation of PyTorch's DistributedDataParallel (DDP), built from scratch using
+torch-native operations and functions. It serves as a useful way to understand at a high level what goes into the
+efficient implementation of DDP.
 
 ## Overview
 
@@ -22,3 +24,5 @@ To run any of the DDP scripts, you can use `torchrun`. For example, to run `ddp1
 ```bash
 torchrun --nproc_per_node=4 ddp1.py
 ```
+
+By default this will run on cpu.
